@@ -1,0 +1,218 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated to enhanced cricket tournament theme colors with emerald green palette */
+  --background: oklch(1 0 0); /* White background */
+  --foreground: oklch(0.4 0.02 240); /* Slate-600 text (#475569) */
+  --card: oklch(0.97 0.01 240); /* Slate-100 card background (#f1f5f9) */
+  --card-foreground: oklch(0.25 0.02 240); /* Gray-800 card text (#1f2937) */
+  --popover: oklch(1 0 0); /* White popover background */
+  --popover-foreground: oklch(0.4 0.02 240); /* Slate-600 popover text */
+  --primary: oklch(0.45 0.15 160); /* Emerald-600 primary (#059669) */
+  --primary-foreground: oklch(1 0 0); /* White text on primary */
+  --secondary: oklch(0.55 0.15 160); /* Emerald-500 secondary (#10b981) */
+  --secondary-foreground: oklch(1 0 0); /* White text on secondary */
+  --muted: oklch(0.97 0.01 240); /* Slate-100 muted background */
+  --muted-foreground: oklch(0.4 0.02 240); /* Slate-600 muted text */
+  --accent: oklch(0.55 0.15 160); /* Emerald-500 accent (#10b981) */
+  --accent-foreground: oklch(1 0 0); /* White text on accent */
+  --destructive: oklch(0.55 0.25 25); /* Red-600 for errors (#dc2626) */
+  --destructive-foreground: oklch(1 0 0); /* White text on destructive */
+  --border: oklch(0.9 0.01 240); /* Gray-200 border (#e5e7eb) */
+  --input: oklch(0.97 0.01 240); /* Slate-100 input background */
+  --ring: oklch(0.45 0.15 160 / 0.5); /* Emerald-600 ring with opacity */
+  --chart-1: oklch(0.45 0.15 160); /* Emerald-600 for charts */
+  --chart-2: oklch(0.55 0.15 160); /* Emerald-500 for charts */
+  --chart-3: oklch(0.65 0.15 160); /* Emerald-400 for charts (#4ade80) */
+  --chart-4: oklch(0.6 0.15 160); /* Emerald-400 variant (#34d399) */
+  --chart-5: oklch(0.8 0.1 160); /* Emerald-200 for charts (#a7f3d0) */
+  --radius: 0.5rem; /* Standard border radius */
+  --sidebar: oklch(1 0 0); /* White sidebar */
+  --sidebar-foreground: oklch(0.4 0.02 240); /* Slate-600 sidebar text */
+  --sidebar-primary: oklch(0.45 0.15 160); /* Emerald-600 sidebar primary */
+  --sidebar-primary-foreground: oklch(1 0 0); /* White text on sidebar primary */
+  --sidebar-accent: oklch(0.55 0.15 160); /* Emerald-500 sidebar accent */
+  --sidebar-accent-foreground: oklch(1 0 0); /* White text on sidebar accent */
+  --sidebar-border: oklch(0.9 0.01 240); /* Gray-200 sidebar border */
+  --sidebar-ring: oklch(0.45 0.15 160 / 0.5); /* Emerald ring for sidebar */
+  --font-space-grotesk: "Space Grotesk", sans-serif;
+  --font-dm-sans: "DM Sans", sans-serif;
+}
+
+.dark {
+  /* Updated dark mode colors to complement emerald cricket theme */
+  --background: oklch(0.1 0 0); /* Dark background */
+  --foreground: oklch(0.95 0 0); /* Light text */
+  --card: oklch(0.15 0 0); /* Dark card background */
+  --card-foreground: oklch(0.95 0 0); /* Light card text */
+  --popover: oklch(0.1 0 0); /* Dark popover */
+  --popover-foreground: oklch(0.95 0 0); /* Light popover text */
+  --primary: oklch(0.5 0.15 160); /* Brighter emerald for dark mode */
+  --primary-foreground: oklch(0.1 0 0); /* Dark text on primary */
+  --secondary: oklch(0.6 0.15 160); /* Brighter emerald secondary for dark mode */
+  --secondary-foreground: oklch(0.1 0 0); /* Dark text on secondary */
+  --muted: oklch(0.2 0 0); /* Dark muted background */
+  --muted-foreground: oklch(0.65 0 0); /* Medium light muted text */
+  --accent: oklch(0.6 0.15 160); /* Bright emerald accent */
+  --accent-foreground: oklch(0.1 0 0); /* Dark text on accent */
+  --destructive: oklch(0.6 0.25 25); /* Brighter red for dark mode */
+  --destructive-foreground: oklch(0.95 0 0); /* Light text on destructive */
+  --border: oklch(0.25 0 0); /* Dark border */
+  --input: oklch(0.2 0 0); /* Dark input background */
+  --ring: oklch(0.5 0.15 160 / 0.5); /* Emerald ring for dark mode */
+  --chart-1: oklch(0.5 0.15 160); /* Bright emerald for dark charts */
+  --chart-2: oklch(0.6 0.15 160); /* Bright emerald variant for dark charts */
+  --chart-3: oklch(0.7 0.15 160); /* Bright emerald light for dark charts */
+  --chart-4: oklch(0.65 0.15 160); /* Bright emerald medium for dark charts */
+  --chart-5: oklch(0.75 0.1 160); /* Light emerald for dark charts */
+  --sidebar: oklch(0.15 0 0); /* Dark sidebar */
+  --sidebar-foreground: oklch(0.95 0 0); /* Light sidebar text */
+  --sidebar-primary: oklch(0.5 0.15 160); /* Bright emerald sidebar primary */
+  --sidebar-primary-foreground: oklch(0.1 0 0); /* Dark text on sidebar primary */
+  --sidebar-accent: oklch(0.6 0.15 160); /* Bright emerald sidebar accent */
+  --sidebar-accent-foreground: oklch(0.1 0 0); /* Dark text on sidebar accent */
+  --sidebar-border: oklch(0.25 0 0); /* Dark sidebar border */
+  --sidebar-ring: oklch(0.5 0.15 160 / 0.5); /* Emerald ring for dark sidebar */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --font-sans: var(--font-space-grotesk);
+  --font-serif: var(--font-dm-sans);
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Added custom animations for enhanced user experience */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  53%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40%,
+  43% {
+    transform: translateY(-10px);
+  }
+  70% {
+    transform: translateY(-5px);
+  }
+  90% {
+    transform: translateY(-2px);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.5s ease-out;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.6s ease-out;
+}
+
+.animate-bounce-gentle {
+  animation: bounce 2s infinite;
+}
+
+/* Enhanced hover effects for interactive elements */
+.hover-lift {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.hover-scale {
+  transition: transform 0.2s ease-in-out;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
