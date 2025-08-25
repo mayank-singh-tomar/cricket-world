@@ -5,77 +5,77 @@
 @layer base {
   :root {
     /* Updated to enhanced cricket tournament theme colors with emerald green palette */
-    --background: oklch(1 0 0); /* White background */
-    --foreground: oklch(0.4 0.02 240); /* Slate-600 text (#475569) */
-    --card: oklch(0.97 0.01 240); /* Slate-100 card background (#f1f5f9) */
-    --card-foreground: oklch(0.25 0.02 240); /* Gray-800 card text (#1f2937) */
-    --popover: oklch(1 0 0); /* White popover background */
-    --popover-foreground: oklch(0.4 0.02 240); /* Slate-600 popover text */
-    --primary: oklch(0.45 0.15 160); /* Emerald-600 primary (#059669) */
-    --primary-foreground: oklch(1 0 0); /* White text on primary */
-    --secondary: oklch(0.55 0.15 160); /* Emerald-500 secondary (#10b981) */
-    --secondary-foreground: oklch(1 0 0); /* White text on secondary */
-    --muted: oklch(0.97 0.01 240); /* Slate-100 muted background */
-    --muted-foreground: oklch(0.4 0.02 240); /* Slate-600 muted text */
-    --accent: oklch(0.55 0.15 160); /* Emerald-500 accent (#10b981) */
-    --accent-foreground: oklch(1 0 0); /* White text on accent */
-    --destructive: oklch(0.55 0.25 25); /* Red-600 for errors (#dc2626) */
-    --destructive-foreground: oklch(1 0 0); /* White text on destructive */
-    --border: oklch(0.9 0.01 240); /* Gray-200 border (#e5e7eb) */
-    --input: oklch(0.97 0.01 240); /* Slate-100 input background */
-    --ring: oklch(0.45 0.15 160 / 0.5); /* Emerald-600 ring with opacity */
-    --chart-1: oklch(0.45 0.15 160); /* Emerald-600 for charts */
-    --chart-2: oklch(0.55 0.15 160); /* Emerald-500 for charts */
-    --chart-3: oklch(0.65 0.15 160); /* Emerald-400 for charts (#4ade80) */
-    --chart-4: oklch(0.6 0.15 160); /* Emerald-400 variant (#34d399) */
-    --chart-5: oklch(0.8 0.1 160); /* Emerald-200 for charts (#a7f3d0) */
+    --background: 0 0% 100%; /* White background */
+    --foreground: 215 25% 27%; /* Slate-600 text (#475569) */
+    --card: 214 32% 91%; /* Slate-100 card background (#f1f5f9) */
+    --card-foreground: 215 25% 27%; /* Gray-800 card text (#1f2937) */
+    --popover: 0 0% 100%; /* White popover background */
+    --popover-foreground: 215 25% 27%; /* Slate-600 popover text */
+    --primary: 160 84% 39%; /* Emerald-600 primary (#059669) */
+    --primary-foreground: 0 0% 100%; /* White text on primary */
+    --secondary: 160 84% 45%; /* Emerald-500 secondary (#10b981) */
+    --secondary-foreground: 0 0% 100%; /* White text on secondary */
+    --muted: 214 32% 91%; /* Slate-100 muted background */
+    --muted-foreground: 215 25% 27%; /* Slate-600 muted text */
+    --accent: 160 84% 45%; /* Emerald-500 accent (#10b981) */
+    --accent-foreground: 0 0% 100%; /* White text on accent */
+    --destructive: 0 84% 60%; /* Red-600 for errors (#dc2626) */
+    --destructive-foreground: 0 0% 100%; /* White text on destructive */
+    --border: 214 32% 91%; /* Gray-200 border (#e5e7eb) */
+    --input: 214 32% 91%; /* Slate-100 input background */
+    --ring: 160 84% 39%; /* Emerald-600 ring */
+    --chart-1: 160 84% 39%; /* Emerald-600 for charts */
+    --chart-2: 160 84% 45%; /* Emerald-500 for charts */
+    --chart-3: 160 84% 60%; /* Emerald-400 for charts (#4ade80) */
+    --chart-4: 160 84% 55%; /* Emerald-400 variant (#34d399) */
+    --chart-5: 160 84% 80%; /* Emerald-200 for charts (#a7f3d0) */
     --radius: 0.5rem; /* Standard border radius */
-    --sidebar: oklch(1 0 0); /* White sidebar */
-    --sidebar-foreground: oklch(0.4 0.02 240); /* Slate-600 sidebar text */
-    --sidebar-primary: oklch(0.45 0.15 160); /* Emerald-600 sidebar primary */
-    --sidebar-primary-foreground: oklch(1 0 0); /* White text on sidebar primary */
-    --sidebar-accent: oklch(0.55 0.15 160); /* Emerald-500 sidebar accent */
-    --sidebar-accent-foreground: oklch(1 0 0); /* White text on sidebar accent */
-    --sidebar-border: oklch(0.9 0.01 240); /* Gray-200 sidebar border */
-    --sidebar-ring: oklch(0.45 0.15 160 / 0.5); /* Emerald ring for sidebar */
+    --sidebar: 0 0% 100%; /* White sidebar */
+    --sidebar-foreground: 215 25% 27%; /* Slate-600 sidebar text */
+    --sidebar-primary: 160 84% 39%; /* Emerald-600 sidebar primary */
+    --sidebar-primary-foreground: 0 0% 100%; /* White text on sidebar primary */
+    --sidebar-accent: 160 84% 45%; /* Emerald-500 sidebar accent */
+    --sidebar-accent-foreground: 0 0% 100%; /* White text on sidebar accent */
+    --sidebar-border: 214 32% 91%; /* Gray-200 sidebar border */
+    --sidebar-ring: 160 84% 39%; /* Emerald ring for sidebar */
     --font-space-grotesk: "Space Grotesk", sans-serif;
     --font-dm-sans: "DM Sans", sans-serif;
   }
 
   .dark {
     /* Updated dark mode colors to complement emerald cricket theme */
-    --background: oklch(0.1 0 0); /* Dark background */
-    --foreground: oklch(0.95 0 0); /* Light text */
-    --card: oklch(0.15 0 0); /* Dark card background */
-    --card-foreground: oklch(0.95 0 0); /* Light card text */
-    --popover: oklch(0.1 0 0); /* Dark popover */
-    --popover-foreground: oklch(0.95 0 0); /* Light popover text */
-    --primary: oklch(0.5 0.15 160); /* Brighter emerald for dark mode */
-    --primary-foreground: oklch(0.1 0 0); /* Dark text on primary */
-    --secondary: oklch(0.6 0.15 160); /* Brighter emerald secondary for dark mode */
-    --secondary-foreground: oklch(0.1 0 0); /* Dark text on secondary */
-    --muted: oklch(0.2 0 0); /* Dark muted background */
-    --muted-foreground: oklch(0.65 0 0); /* Medium light muted text */
-    --accent: oklch(0.6 0.15 160); /* Bright emerald accent */
-    --accent-foreground: oklch(0.1 0 0); /* Dark text on accent */
-    --destructive: oklch(0.6 0.25 25); /* Brighter red for dark mode */
-    --destructive-foreground: oklch(0.95 0 0); /* Light text on destructive */
-    --border: oklch(0.25 0 0); /* Dark border */
-    --input: oklch(0.2 0 0); /* Dark input background */
-    --ring: oklch(0.5 0.15 160 / 0.5); /* Emerald ring for dark mode */
-    --chart-1: oklch(0.5 0.15 160); /* Bright emerald for dark charts */
-    --chart-2: oklch(0.6 0.15 160); /* Bright emerald variant for dark charts */
-    --chart-3: oklch(0.7 0.15 160); /* Bright emerald light for dark charts */
-    --chart-4: oklch(0.65 0.15 160); /* Bright emerald medium for dark charts */
-    --chart-5: oklch(0.75 0.1 160); /* Light emerald for dark charts */
-    --sidebar: oklch(0.15 0 0); /* Dark sidebar */
-    --sidebar-foreground: oklch(0.95 0 0); /* Light sidebar text */
-    --sidebar-primary: oklch(0.5 0.15 160); /* Bright emerald sidebar primary */
-    --sidebar-primary-foreground: oklch(0.1 0 0); /* Dark text on sidebar primary */
-    --sidebar-accent: oklch(0.6 0.15 160); /* Bright emerald sidebar accent */
-    --sidebar-accent-foreground: oklch(0.1 0 0); /* Dark text on sidebar accent */
-    --sidebar-border: oklch(0.25 0 0); /* Dark sidebar border */
-    --sidebar-ring: oklch(0.5 0.15 160 / 0.5); /* Emerald ring for dark sidebar */
+    --background: 222 84% 5%; /* Dark background */
+    --foreground: 210 40% 98%; /* Light text */
+    --card: 222 84% 5%; /* Dark card background */
+    --card-foreground: 210 40% 98%; /* Light card text */
+    --popover: 222 84% 5%; /* Dark popover */
+    --popover-foreground: 210 40% 98%; /* Light popover text */
+    --primary: 160 84% 45%; /* Brighter emerald for dark mode */
+    --primary-foreground: 222 84% 5%; /* Dark text on primary */
+    --secondary: 160 84% 50%; /* Brighter emerald secondary for dark mode */
+    --secondary-foreground: 222 84% 5%; /* Dark text on secondary */
+    --muted: 217 33% 17%; /* Dark muted background */
+    --muted-foreground: 215 20% 65%; /* Medium light muted text */
+    --accent: 160 84% 50%; /* Bright emerald accent */
+    --accent-foreground: 222 84% 5%; /* Dark text on accent */
+    --destructive: 0 84% 60%; /* Brighter red for dark mode */
+    --destructive-foreground: 210 40% 98%; /* Light text on destructive */
+    --border: 217 33% 17%; /* Dark border */
+    --input: 217 33% 17%; /* Dark input background */
+    --ring: 160 84% 45%; /* Emerald ring for dark mode */
+    --chart-1: 160 84% 45%; /* Bright emerald for dark charts */
+    --chart-2: 160 84% 50%; /* Bright emerald variant for dark charts */
+    --chart-3: 160 84% 60%; /* Bright emerald light for dark charts */
+    --chart-4: 160 84% 55%; /* Bright emerald medium for dark charts */
+    --chart-5: 160 84% 75%; /* Light emerald for dark charts */
+    --sidebar: 222 84% 5%; /* Dark sidebar */
+    --sidebar-foreground: 210 40% 98%; /* Light sidebar text */
+    --sidebar-primary: 160 84% 45%; /* Bright emerald sidebar primary */
+    --sidebar-primary-foreground: 222 84% 5%; /* Dark text on sidebar primary */
+    --sidebar-accent: 160 84% 50%; /* Bright emerald sidebar accent */
+    --sidebar-accent-foreground: 222 84% 5%; /* Dark text on sidebar accent */
+    --sidebar-border: 217 33% 17%; /* Dark sidebar border */
+    --sidebar-ring: 160 84% 45%; /* Emerald ring for dark sidebar */
   }
 
   * {
