@@ -14,7 +14,8 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { useRouter } from "next/navigation"
-import { User, LogOut } from "lucide-react"
+import { User, LogOut, Home, Info, Mail, UserPlus, Trophy, Settings } from "lucide-react"
+import Link from "next/link"
 
 interface Player {
   id: string
@@ -138,6 +139,53 @@ export default function DashboardPage() {
               </Button>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Navigation Menu */}
+      <div className="bg-muted/50 border-b border-border">
+        <div className="container mx-auto px-4 py-3">
+          <nav className="flex items-center space-x-6 overflow-x-auto">
+            <Link 
+              href="/" 
+              className="flex items-center space-x-2 text-foreground hover:text-primary transition-colors whitespace-nowrap"
+            >
+              <Home className="h-4 w-4" />
+              <span>Home</span>
+            </Link>
+            <Link 
+              href="/about" 
+              className="flex items-center space-x-2 text-foreground hover:text-primary transition-colors whitespace-nowrap"
+            >
+              <Info className="h-4 w-4" />
+              <span>About Tournament</span>
+            </Link>
+            <Link 
+              href="/register" 
+              className="flex items-center space-x-2 text-foreground hover:text-primary transition-colors whitespace-nowrap"
+            >
+              <UserPlus className="h-4 w-4" />
+              <span>Register Team</span>
+            </Link>
+            <Link 
+              href="/contact" 
+              className="flex items-center space-x-2 text-foreground hover:text-primary transition-colors whitespace-nowrap"
+            >
+              <Mail className="h-4 w-4" />
+              <span>Contact Us</span>
+            </Link>
+            <Link 
+              href="/admin" 
+              className="flex items-center space-x-2 text-foreground hover:text-primary transition-colors whitespace-nowrap"
+            >
+              <Settings className="h-4 w-4" />
+              <span>Admin Panel</span>
+            </Link>
+            <div className="flex items-center space-x-2 text-primary font-medium whitespace-nowrap">
+              <Trophy className="h-4 w-4" />
+              <span>Dashboard</span>
+            </div>
+          </nav>
         </div>
       </div>
 
