@@ -14,3 +14,4 @@ ALTER TABLE profiles ALTER COLUMN photo_url TYPE VARCHAR(500);
 CREATE INDEX IF NOT EXISTS idx_profiles_photo_mime_type ON profiles(photo_mime_type);
 
 
+

@@ -15,3 +15,4 @@ END $$;
 ALTER TABLE profiles ALTER COLUMN aadhar_id DROP NOT NULL;
 
 
+

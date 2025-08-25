@@ -19,3 +19,4 @@ CREATE INDEX IF NOT EXISTS idx_storage_user ON storage(uploaded_by);
 CREATE UNIQUE INDEX IF NOT EXISTS idx_storage_unique_path ON storage(bucket_name, file_path);
 
 
+
